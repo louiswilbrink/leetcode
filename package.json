@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "tsx": "^4.17.0"
+    "tsc": "^2.0.4",
+    "tsx": "^4.17.0",
+    "typescript": "^5.5.4"
   }
 }

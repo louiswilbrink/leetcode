@@ -18,3 +18,10 @@ Good for binary tree problems.
 
 LeetCode Problems:
 `108-convert-sorted-array-to-binary-search-tree.ts`
+
+## Quick Select
+
+TODO: Understand this better!
+
+LeetCode Problems:
+`215-kth-largest-element-in-an-array`
