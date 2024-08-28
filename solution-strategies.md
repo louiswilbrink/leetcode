@@ -2,12 +2,14 @@
 
 ## Pointers
 
-Good for iterating over two arrays and scrutinizing the elements.
+Good for iterating over two arrays and comparing elements.
 
 Problems:
 `88-merge-sorted-arrays`
 
 ## Sliding Window
+
+Coming soon...
 
 LeetCode Problems:
 `3-longest-string-without-repeating-characters`
@@ -21,7 +23,7 @@ LeetCode Problems:
 
 ## Quick Select
 
-TODO: Understand this better!
+Coming soon...
 
 LeetCode Problems:
 `215-kth-largest-element-in-an-array`
