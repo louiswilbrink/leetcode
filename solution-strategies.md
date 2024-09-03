@@ -40,3 +40,7 @@ Good when you need to remember things in order and process them in reverse order
 
 LeetCode Problems:
 `394-decode-string`
+
+## Call Stack Counter:
+
+Good when the answer is tied to the number of recursive calls made.
