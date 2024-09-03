@@ -27,3 +27,16 @@ Coming soon...
 
 LeetCode Problems:
 `215-kth-largest-element-in-an-array`
+
+## Queues
+
+Good when you want to remember things in order and process them FIFO (First In, First Out).
+
+Implementation: Create and array and use push and shift OR use a linked list
+
+## Stacks
+
+Good when you need to remember things in order and process them in reverse order.
+
+LeetCode Problems:
+`394-decode-string`
