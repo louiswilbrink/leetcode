@@ -18,6 +18,9 @@ LeetCode Problems:
 
 Good for binary tree problems.
 
+Useful for problems where you can break the problem down into smaller subproblems.
+
+
 LeetCode Problems:
 `108-convert-sorted-array-to-binary-search-tree.ts`
 

@@ -32,45 +32,47 @@
 // The solution is optimal in terms of time and space complexity.
 // The solution is accepted on LeetCode.
 
-class ListNode {
-  val: number;
-  next: ListNode | null;
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = val === undefined ? 0 : val;
-    this.next = next === undefined ? null : next;
-  }
-}
-
-function reverseList(head: ListNode | null): ListNode | null {
-  // Save a reference to the previous node.
-  // Note: We want this to start off as `null` in order to create a new tail.
-  let previousNode = null;
-
-  // Iterate through the linked list by updating the `head` pointer to the next node until it gets to the tail, where `head.next` is `null`.
-  while (head) {
-    // Save a reference to the next node.
-    const nextNode = head.next;
-
-    // Set the next node of the current node to the previous node.
-    head.next = previousNode;
-
-    // Set the previous node to the current node.
-    previousNode = head;
-
-    // Set the current node to the next node.
-    // Aka, continue the next iteration through the linked list.
-    head = nextNode;
+(() => {
+  class ListNode {
+    val: number;
+    next: ListNode | null;
+    constructor(val?: number, next?: ListNode | null) {
+      this.val = val === undefined ? 0 : val;
+      this.next = next === undefined ? null : next;
+    }
   }
 
-  // Head should now be pointing to the last node in the original linked list.
-  // All nodes should have had their `next` pointers updated to point to the previous node.
-  return head;
-}
+  function reverseList(head: ListNode | null): ListNode | null {
+    // Save a reference to the previous node.
+    // Note: We want this to start off as `null` in order to create a new tail.
+    let previousNode = null;
 
-// Test case 1
-const testInput = new ListNode(
-  1,
-  new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))),
-);
+    // Iterate through the linked list by updating the `head` pointer to the next node until it gets to the tail, where `head.next` is `null`.
+    while (head) {
+      // Save a reference to the next node.
+      const nextNode = head.next;
 
-console.log(reverseList(testInput));
+      // Set the next node of the current node to the previous node.
+      head.next = previousNode;
+
+      // Set the previous node to the current node.
+      previousNode = head;
+
+      // Set the current node to the next node.
+      // Aka, continue the next iteration through the linked list.
+      head = nextNode;
+    }
+
+    // Head should now be pointing to the last node in the original linked list.
+    // All nodes should have had their `next` pointers updated to point to the previous node.
+    return head;
+  }
+
+  // Test case 1
+  const testInput = new ListNode(
+    1,
+    new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))),
+  );
+
+  console.log(reverseList(testInput));
+})();
