@@ -10,29 +10,28 @@
 
 const lengthOfLongestSubstring = (s: string): number => {
   let longestLength = 0;
+  const substring = new Set<string>();
 
   for (let i = 0; i < s.length; i++) {
-    const charSet = new Set<string>();
-    let length = 0;
-
-    for (let j = i; j < s.length; j++) {
-      const char = s[j];
-
-      if (charSet.has(char)) {
-        break;
-      }
-
-      charSet.add(char);
-      length++;
+    const char = s[i];
+    // If you encounter a repeated character:
+    // 1. Save the length of the substring if it exceeds the current value for longestLenghth.
+    // 2. Restart the substring using the current character.
+    if (substring.has(char)) {
+      longestLength = Math.max(longestLength, substring.size);
+      substring.clear();
+      substring.add(char);
+    } else {
+      // Otherwise, continue building the substring since characters are not yet repeating.
+      substring.add(char);
     }
-
-    longestLength = Math.max(longestLength, length);
   }
 
-  return 5;
+  // At this point, you'll have a value for longestLength, and the current substring.  Return whatever is longer.
+  return Math.max(longestLength, substring.size);
 };
 
-// Time complexity: O(n^2) where n is the length of s
+// Time complexity: O(n) where n is the length of s
 // Space complexity: O(min(n, m)) where n is the length of s and m is the size of the character set
 
 console.log(lengthOfLongestSubstring("catdd")); // Answer: 4
