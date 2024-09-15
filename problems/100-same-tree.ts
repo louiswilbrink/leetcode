@@ -47,22 +47,6 @@
 // Space complexity: O(n) - where n is the number of nodes in the tree.
 
 (() => {
-  class TreeNode {
-    val: number;
-    left: TreeNode | null;
-    right: TreeNode | null;
-
-    constructor(
-      val: number = 0,
-      left: TreeNode | null = null,
-      right: TreeNode | null = null,
-    ) {
-      this.val = val;
-      this.left = left;
-      this.right = right;
-    }
-  }
-
   function isSameTree(p: TreeNode | null, q: TreeNode | null): boolean {
     // If both trees are null, they are the same
     if (!p && !q) return true;
