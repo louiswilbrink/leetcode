@@ -1,12 +1,23 @@
 // Problem Title: Longest Substring Without Repeating Characters
 // Problem URL: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-//
+
 // Problem:
 // Given a string `s`, find the length of the longest substring without repeating characters.
-//
+
+// Example 1:
+// Input: s = "abcabcbb"
+// Output: 3
+
+// Pattern:
+// Sliding Window (using a `Set`)
+
 // Solution:
 // We can use a sliding window approach to solve this problem.
 // We'll keep track of the characters we've seen so far in a set.
+
+// Big O Notation:
+// Time complexity: O(n) - where n is the length of s
+// Space complexity: O(min(n, m)) - where n is the length of s and m is the size of the character set
 
 const lengthOfLongestSubstring = (s: string): number => {
   let longestLength = 0;
@@ -30,9 +41,6 @@ const lengthOfLongestSubstring = (s: string): number => {
   // At this point, you'll have a value for longestLength, and the current substring.  Return whatever is longer.
   return Math.max(longestLength, substring.size);
 };
-
-// Time complexity: O(n) where n is the length of s
-// Space complexity: O(min(n, m)) where n is the length of s and m is the size of the character set
 
 console.log(lengthOfLongestSubstring("catdd")); // Answer: 4
 // console.log(lengthOfLongestSubstring("skkejldkk")); // Answer: 6

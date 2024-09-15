@@ -7,6 +7,9 @@
 // and you may not use the same element twice.
 // You can return the answer in any order.
 
+// Pattern:
+// Hash Map
+
 // Solution:
 // Use a hash map to store complements and their indices.
 // Iterate through the array, checking if the complement exists.

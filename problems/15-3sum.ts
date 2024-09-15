@@ -20,8 +20,10 @@
 // Input: nums = [0]
 // Output: []
 
+// Pattern:
+// Two Pointers
+
 // Solution:
-// [Two Points Pattern]
 // The trick is to first sort the array and iterate through it.
 // For each number, we set two pointers, one at the _next_ index and the other at the _end_ of the array.
 // (These three pointers, including the iterator, will form a triplet.)

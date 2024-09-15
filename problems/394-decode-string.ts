@@ -18,6 +18,9 @@
 // Input: s = "2[abc]3[cd]ef"
 // Output: "abcabccdcdcdef"
 
+// Pattern:
+// Stack
+
 // Solution:
 // We can solve this problem using a stack to keep track of the current string and the number of times it should be repeated.
 // We will iterate over the input string and process each character based on the following rules:

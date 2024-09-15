@@ -14,6 +14,9 @@
 // Input: nums = [1,2,3], k = 3
 // Output: 2
 
+// Pattern:
+// Prefix Sum + Hash Map
+
 // Solution:
 // The trick is to maintain a running sum of the numbers in the array (prefix sum or cumulative sum) and to use a hashmap to keep track of the number of times a sum has been seen.
 // As you iterate through the array, you check if the current sum minus k has been seen before.
