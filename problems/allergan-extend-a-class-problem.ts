@@ -78,17 +78,17 @@
 
   const myExtendedIterator = new ExtendedIterator();
 
-  console.log("Has next value:", myExtendedIterator.hasNext()); // true
-  console.log("Has next value:", myExtendedIterator.hasNext()); // true
-  console.log("Next value:", myExtendedIterator.next()); // { value: 2 }
-  console.log("Has next value:", myExtendedIterator.hasNext()); // true
-  console.log("Next value:", myExtendedIterator.next()); // { value: 3 }
-  console.log("Has next value:", myExtendedIterator.hasNext()); // false
-  console.log("Next value:", myExtendedIterator.next()); // { done: true }
-  console.log("Has next value:", myExtendedIterator.hasNext()); // false
-  console.log("Next value:", myExtendedIterator.next()); // { done: true }
-  console.log("Next value:", myExtendedIterator.next()); // { done: true }
-  console.log("Next value:", myExtendedIterator.next()); // { done: true }
-  console.log("Next value:", myExtendedIterator.next()); // { done: true }
-  console.log("Next value:", myExtendedIterator.next()); // { done: true }
+  // console.log("Has next value:", myExtendedIterator.hasNext()); // true
+  // console.log("Has next value:", myExtendedIterator.hasNext()); // true
+  // console.log("Next value:", myExtendedIterator.next()); // { value: 2 }
+  // console.log("Has next value:", myExtendedIterator.hasNext()); // true
+  // console.log("Next value:", myExtendedIterator.next()); // { value: 3 }
+  // console.log("Has next value:", myExtendedIterator.hasNext()); // false
+  // console.log("Next value:", myExtendedIterator.next()); // { done: true }
+  // console.log("Has next value:", myExtendedIterator.hasNext()); // false
+  // console.log("Next value:", myExtendedIterator.next()); // { done: true }
+  // console.log("Next value:", myExtendedIterator.next()); // { done: true }
+  // console.log("Next value:", myExtendedIterator.next()); // { done: true }
+  // console.log("Next value:", myExtendedIterator.next()); // { done: true }
+  // console.log("Next value:", myExtendedIterator.next()); // { done: true }
 })();
