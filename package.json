@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^4.21.0",
+    "sqlite3": "^5.1.7",
     "tsc": "^2.0.4",
     "tsx": "^4.17.0",
     "typescript": "^5.5.4"

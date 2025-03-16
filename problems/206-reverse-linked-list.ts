@@ -16,6 +16,9 @@
 // Input: head = []
 // Output: []
 
+// Pattern:
+// Linked List
+
 // Solution:
 // 1. Initialize a variable to keep track of the previous node as null
 // 2. Iterate through the linked list
@@ -23,6 +26,7 @@
 // 4. Update the previous node to the current node
 // 5. Update the current node to the next node
 // 6. Return the previous node as the new head
+
 // Time complexity: O(n)
 // Space complexity: O(1)
 
@@ -47,7 +51,8 @@
     // Note: We want this to start off as `null` in order to create a new tail.
     let previousNode = null;
 
-    // Iterate through the linked list by updating the `head` pointer to the next node until it gets to the tail, where `head.next` is `null`.
+    // Iterate through the linked list by updating the `head` pointer to the next node
+    // until it gets to the tail, where `head.next` is `null`.
     while (head) {
       // Save a reference to the next node.
       const nextNode = head.next;
